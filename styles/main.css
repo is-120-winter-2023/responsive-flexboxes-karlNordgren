@@ -1,0 +1,188 @@
+/*****************************************************/
+/* This semester we will be using my variation of    */
+/* Josh Comeau's CSS Reset instead of normalize      */
+/* Read more at                                      */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+/*****************************************************/
+/* Always add your CSS below the reset CSS           */
+/*****************************************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  /* this an experimental line-height; if it breaks, add line-height: 1.5 to body */
+  line-height: calc(1em + 0.5rem);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+footer {
+  word-wrap: break-word;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+<<<<<<< HEAD
+  /*changes to adjustable*/
+=======
+>>>>>>> 94e8ae6c2d29bd38eedb67d4fbbb82d3eb39223d
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* until you get a feel for overflow, I'll keep these next two commented out */
+/* p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+} */
+
+/* p {
+  overflow-wrap: break-word;
+  hyphens: auto;
+} */
+
+/* add your CSS here */
+:root {
+  --color-font: #333;
+  --color-primary: white; /* dark blue */
+  --color-secondary: #517ea6; /* light blue */
+  --color-accent: #a6653f; /* orange brown */
+  --color-accent-light: #f2bc8d; /* light tan */
+}
+
+body {
+  font-family: "Fauna One", serif;
+  color: var(--color-font);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cinzel", serif;
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a[href]:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  opacity: 0.8;
+}
+
+.hero picture {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content h1 {
+  font-size: 4em;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.hero-content .subtitle {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.hero h1 {
+  font-size: clamp(3.5rem, 10vw + 1rem, 10rem);
+}
+
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.cards {
+  display: flex;
+  ...;
+}
+
+.card {
+  flex: 1 1 0;
+  ...;
+}
+
+.card {
+  display: flex;
+  gap: 1rem;
+  ...;
+}
+
+.card {
+  ...
+  transition: box-shadow 300ms ease;
+}
+  
